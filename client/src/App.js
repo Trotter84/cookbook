@@ -9,6 +9,7 @@ import { Menu } from 'semantic-ui-react'
 import AddIngredient from './AddIngredient'
 import AddRecipe from './AddRecipe'
 import Recipe from './Recipe'
+import Recipes from './Recipes'
 
 const links = [
   'recipes',
@@ -35,6 +36,7 @@ const App = ({ location }) => (
       <Route exact path="/add_ingredients" component={AddIngredient} />
       <Route exact path="/add_recipe" component={AddRecipe} />
       <Route exact path="/recipes/:id" component={Recipe} />
+      <Route exact path="/recipes" component={Recipes} />
     </Switch>
   </Fragment>
 )
